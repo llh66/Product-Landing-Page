@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header id="header">
+        <img src="https://www.hku.hk/assets/img/hku-logo.svg?t=1678891777" alt="Logo" id="header-img" loading="lazy">
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#demo" class="nav-link">Demo</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="sign-up">
+        <h2>Senior Design Project</h2>
+        <h3>Food Stand Location Sharing App with AR navigation</h3>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+            <input type="email" id="email" placeholder="email" name="email" required>
+            <input type="submit" id="submit" name="submit" value="Sign Up (for vendors)">
+        </form>
+    </section>
+
+    <section id="features">
+        <div class="grid">
+            <span class="material-icons">
+                storefront
+            </span>
+            <p>Vendors can upload and update their stands' opening hours, product type, and locations</p>
+        </div>
+        
+        <div class="grid">
+            <span class="material-icons">
+                shopping_bag
+            </span>
+            <p>Customers can see all the opening stands and check their info on a map, they can also be filtered with time and type</p>
+        </div>
+
+        <div class="grid">
+            <span class="material-icons">
+                explore
+            </span>
+            <p>For stands that are within walking distance, an AR navigation can be started</p>
+        </div>
+
+    </section>
+
+    <section id="demo">
+        <video id="video" controls loading="lazy">
+            <source src="nav1.mp4" type="video/mp4">
+        </video>
+    </section>
+    
+    <section id="pricing">
+        <div class="price">
+            <h5>Vendors</h4>
+            <h4>$1 /month</h4>
+            <ul>
+                <li>Authentication required</li>
+                <li>Upload and update your stands' info</li>
+            </ul>
+        </div>
+        <div class="price">
+            <h5>Customers</h4>
+            <h4>Free</h4>
+            <ul>
+                <li>Authentication <b>not</b> required</li>
+                <li>Check any stands on the map</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>2024, Lihua Liu</p>
+    </footer>
+</body>
+</html>
